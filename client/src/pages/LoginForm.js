@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
-function LoginForm({onLogin ,setShowLogin}) {
+function LoginForm({onLogin}) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [errors, setErrors] = useState([]);
@@ -53,9 +53,9 @@ function LoginForm({onLogin ,setShowLogin}) {
           <button type="submit" className="btn btn-primary" onSubmit={handleSubmit}>
             Submit
           </button>
-          <Button color="secondary" onClick={() => setShowLogin(false)}>
+          {/* <Button color="secondary" onClick={() => setShowLogin(false)}>
               Sign Up
-            </Button>
+            </Button> */}
         </div>
         {/* <p className="forgot-password text-right mt-2">
           Forgot <a href="#">password?</a>

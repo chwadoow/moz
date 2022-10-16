@@ -9,13 +9,18 @@ function Login({onLogin}) {
 {
     showLogin ? (
     <>
-        <LoginForm onLogin={onLogin} s setShowLogin={setShowLogin}/>
-      
+        <LoginForm onLogin={onLogin}/>
+      <p>Dont have an account sign Up</p>
+      <br></br>
+      <button onClick={()=>setShowLogin(false)}>sing up</button>
         </>
     )
     :(
 <>
-        <SignupForm onLogin={onLogin} setShowLogin={setShowLogin}/>
+        <SignupForm onLogin={onLogin} />
+        <p>Already have an account sign in</p>
+      <br></br>
+      <button onClick={()=>setShowLogin(true)}>sing in</button>
     
         </>
     )

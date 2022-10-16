@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import Button from 'react-bootstrap/Button';
-function SignupForm( {onLogin,setShowLogin}) {
+function SignupForm( {onLogin}) {
 
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -74,7 +74,7 @@ function SignupForm( {onLogin,setShowLogin}) {
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
-          <Button color="secondary" onClick={() => setShowLogin(false)}>sign in </Button>
+          {/* <Button color="secondary" onClick={() => setShowLogin(false)}>sign in </Button> */}
         </div>
         {/* <p className="forgot-password text-right mt-2">
           Forgot <a href="#">password?</a>

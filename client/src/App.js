@@ -12,26 +12,26 @@ import BasicExample from './Components/BasicExample'
 function App() {
   const [user, setUser] = useState(null);
 
-  // useEffect(() => {
-  //   // auto-login
+  useEffect(() => {
+    // auto-login
   
-  //   fetch("http://localhost:3000/me").then((r) => {
-  //     if (r.ok) {
-  //       r.json().then((user) => setUser(user));
-  //     }
-  //   });
-  // }, []);
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
 
-  // if (!user) return <Login onLogin={setUser} />;
+  if (!user) return <Login onLogin={setUser} />;
   return (
 <>
-<BasicExample/>
+<BasicExample  user={user} setUser={setUser}/>
 <Routes>
 
-  <Route path="/house"  element={<Dashboard />}/>
+  <Route path="/"  element={<Dashboard />}/>
 
 
-  <Route path="/" element={<Payments  />}/>
+  <Route path="/payments" element={<Payments  />}/>
   <Route path="/:house_id"  element={<Rooms />}/>
     </Routes>
     </>
