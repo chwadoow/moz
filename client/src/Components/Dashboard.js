@@ -71,8 +71,9 @@ useEffect(() => {
         Submit
       </Button>
     </Form>
+    <br></br>
 
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} >
       <Grid container spacing={2}>
 
 {houses.length > 0 ?

@@ -88,8 +88,10 @@ house_id : house_id
         Submit
       </Button>
     </Form>
+
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
+        <br></br>
    
 {rooms.length > 0 ?
 rooms.map((room)=>(

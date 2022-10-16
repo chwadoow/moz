@@ -15,7 +15,7 @@ function BasicExample({user,setUser}) {
     });
   }
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" >
       <Container>
         <Navbar.Brand href="/">Rent Managment App</Navbar.Brand>
       
