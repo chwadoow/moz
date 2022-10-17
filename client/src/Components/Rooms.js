@@ -95,7 +95,7 @@ house_id : house_id
    
 {rooms.length > 0 ?
 rooms.map((room)=>(
-    <Grid item xs={3} key={room.id}>
+    <Grid  key={room.id} item xs={3}>
       <Card sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>

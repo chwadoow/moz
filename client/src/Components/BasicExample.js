@@ -20,7 +20,7 @@ function BasicExample({user,setUser}) {
         <Navbar.Brand href="/">Rent Managment App</Navbar.Brand>
       
      
-        <Nav.Link href="/payments"> Payments</Nav.Link>
+        <Nav.Link href="/payment"> Payments</Nav.Link>
         <Button variant="outline" onClick={handleLogoutClick}>
           Logout
         </Button>
