@@ -1,9 +1,24 @@
 # Project Template: React/Rails API
 
+
 ## Description
 
 This project is scaffolded so that you can build a React frontend and Rails
 backend together, and easily deploy them to Heroku.
+
+This is an app is a rental managment that helps agents keep track of their houses, rooms and tenants.
+
+#here is a live link for the app
+##https://rent-moz.herokuapp.com/
+
+
+#what the app incooporates
+
+in react 
+1. Routing and dynamic routing
+2. react hooks such as useeffect and use state
+in rails back end
+1. the app incooperates authentication 
 
 ## Requirements
 
